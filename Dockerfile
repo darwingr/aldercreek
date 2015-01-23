@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 	&& docker-php-ext-install gd
 RUN docker-php-ext-install mysqli
 
-VOLUME /var/www/html
+#VOLUME /var/www/html
 
 ENV WORDPRESS_VERSION 4.1.0
 ENV WORDPRESS_UPSTREAM_VERSION 4.1
