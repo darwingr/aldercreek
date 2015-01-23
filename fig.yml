@@ -5,7 +5,7 @@ web:
   links:
     - db:mysql
   volumes:
-    - /Users/darwingroskleg/Developer/aldercreek/wp-data:/var/www/html
+    - /Users/darwingroskleg/Developer/aldercreek/aldercreek-wp:/var/www/html
 db:
   image: mysql
   environment:
