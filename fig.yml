@@ -1,3 +1,5 @@
+# fig version 1.0.1 (docker-compose)
+# docker version 1.4.1
 web:
   build: .
   ports:
@@ -10,4 +12,4 @@ db:
   image: mysql:5.7.5
   environment:
     - MYSQL_DATABASE=wordpress
-    - MYSQL_ROOT_PASSWORD=darweb
+    - MYSQL_ROOT_PASSWORD=***REMOVED***
