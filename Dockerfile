@@ -11,7 +11,9 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev && rm -rf /var
 RUN docker-php-ext-install mysqli
 
 # php5 apache2 stuff
-RUN echo "upload_max_filesize = 10M;" >> /etc/php5/apache2/php.ini
+#RUN touch /usr/local/etc/php/.ini \
+#	&& echo "upload_max_filesize = 10M;" >> /usr/local/etc/php/.ini
+# RUN echo "\nphp_value post_max_size 24M\nphp_value upload_max_filesize 8M\n" >> /var/www/html/.htaccess
 
 #VOLUME /var/www/html
 
