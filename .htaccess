@@ -7,3 +7,7 @@ RewriteRule . /index.php [L]
 
 php_value post_max_size 24M
 php_value upload_max_filesize 8M
+
+# BEGIN WordPress
+
+# END WordPress
