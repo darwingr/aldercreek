@@ -7,9 +7,9 @@ web:
   links:
     - db:mysql
   volumes:
-    - /Users/darwingroskleg/Developer/aldercreek/aldercreek-wp:/var/www/html
+    - /aldercreek/aldercreek-wp:/var/www/html
 db:
-  image: mysql
+  image: mysql:latest
   environment:
     - MYSQL_DATABASE=wordpress
     - MYSQL_ROOT_PASSWORD=***REMOVED***
