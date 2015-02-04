@@ -33,11 +33,11 @@ function interface_wp_link() {
    return '<a href="'.esc_url( 'http://wordpress.org' ).'" target="_blank" title="' . esc_attr__( 'WordPress', 'interface' ) . '"><span>' . __( 'WordPress', 'interface' ) . '</span></a>';
 }
 /**
- * To display a link to interface.com.
+ * To display a link to darweb.ca.
  *
  * @return string
  */
 function interface_themehorse_link() {
-   return '<a href="'.esc_url( 'http://themehorse.com' ).'" target="_blank" title="'.esc_attr__( 'Theme Horse', 'interface' ).'" ><span>'.__( 'Theme Horse', 'interface') .'</span></a>';
+   return '<a href="'.esc_url( 'http://www.darweb.ca' ).'" target="_blank" title="'.esc_attr__( 'Theme Horse', 'interface' ).'" ><span>'.__( 'DarWeb', 'interface') .'</span></a>';
 }
 ?>
