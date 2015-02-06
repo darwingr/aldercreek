@@ -38,6 +38,6 @@ function interface_wp_link() {
  * @return string
  */
 function interface_themehorse_link() {
-   return '<a href="'.esc_url( 'http://www.darweb.ca' ).'" target="_blank" title="'.esc_attr__( 'Theme Horse', 'interface' ).'" ><span>'.__( 'DarWeb', 'interface') .'</span></a>';
+   return '<a href="'.esc_url( 'http://www.darweb.ca' ).'" target="_blank" title="'.esc_attr__( 'Hire Me', 'interface' ).'" ><span>'.__( 'DarWeb', 'interface') .'</span></a>';
 }
 ?>
