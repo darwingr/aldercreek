@@ -2,6 +2,11 @@ RedirectMatch 404 /\.git
 php_value post_max_size 24M
 php_value upload_max_filesize 8M
 
+<files wp-config.php>
+order allow,deny
+deny from all
+</files>
+
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
