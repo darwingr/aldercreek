@@ -20,3 +20,8 @@ Thumbs.db
 venv
 node_modules
 .sass-cache
+
+# WordPress
+wp-content/backup/*
+wp-content/cache/*
+wp-content/upgrade/*
