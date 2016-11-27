@@ -25,3 +25,7 @@ node_modules
 wp-content/backup/*
 wp-content/cache/*
 wp-content/upgrade/*
+
+# WordPress Core
+wp-admin/*
+wp-includes/*
