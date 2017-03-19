@@ -7,7 +7,7 @@ web:
   links:
     - db:mysql
   volumes:
-    - /aldercreek/aldercreek-wp:/var/www/html
+    - "/aldercreek/wordpress:/var/www/html"
 db:
   image: mysql:latest
   volumes:
