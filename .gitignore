@@ -8,5 +8,5 @@ wp-admin/*
 wp-includes/*
 
 # Database
-/docker/data/db/*
-!/docker/data/db/.keep
+/data/db/*
+!/data/db/.keep
