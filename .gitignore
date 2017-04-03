@@ -1,11 +1,15 @@
-# WordPress
-wp-content/backup/*
-wp-content/cache/*
-wp-content/upgrade/*
+# Wordpress
+wordpress/*
+!wordpress/wp-config.php
+!wordpress/.keep
+!wordpress/.htaccess
+!wordpress/robots.txt
 
-# WordPress Core
-wp-admin/*
-wp-includes/*
+# Wordpress Content
+!wordpress/wp-content/*
+wordpress/wp-content/backup/*
+wordpress/wp-content/cache/*
+wordpress/wp-content/upgrade/*
 
 # Database
 /data/db/*
