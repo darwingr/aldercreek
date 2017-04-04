@@ -6,10 +6,17 @@ wordpress/*
 !wordpress/robots.txt
 
 # Wordpress Content
-!wordpress/wp-content/*
-wordpress/wp-content/backup/*
-wordpress/wp-content/cache/*
-wordpress/wp-content/upgrade/*
+wordpress/wp-content/*
+!wordpress/wp-content/.keep
+wordpress/wp-content/uploads/*
+!wordpress/wp-content/uploads/.keep
+wordpress/wp-content/themes/*
+!wordpress/wp-content/themes/.keep
+wordpress/wp-content/uploads/*
+!wordpress/wp-content/uploads/.keep
+
+# Wordpress Child Theme
+!wordpress/wp-content/themes/interface-child/*
 
 # Database
 /data/db/*
