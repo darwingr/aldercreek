@@ -8,7 +8,7 @@ services:
     restart: always
     environment:
       - MYSQL_DATABASE=wordpress
-      - MYSQL_ROOT_PASSWORD=***REMOVED***
+      - "MYSQL_ROOT_PASSWORD=${DB_PASSWORD}"
 
   web:
     depends_on:
@@ -25,4 +25,5 @@ services:
     restart: always
     environment:
       WORDPRESS_DB_HOST: mysql
-      WORDPRESS_DB_PASSWORD: ***REMOVED***
+      WORDPRESS_DB_PASSWORD: "${DB_PASSWORD}"
+

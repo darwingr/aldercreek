@@ -1,6 +1,8 @@
+# Docker
+.env
+
 # Wordpress
 wordpress/*
-!wordpress/wp-config.php
 !wordpress/.keep
 !wordpress/.htaccess
 !wordpress/robots.txt
