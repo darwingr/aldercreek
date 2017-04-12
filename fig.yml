@@ -14,4 +14,4 @@ db:
     - "./data/db:/var/lib/mysql"
   environment:
     - MYSQL_DATABASE=wordpress
-    - MYSQL_ROOT_PASSWORD=***REMOVED***
+    - MYSQL_ROOT_PASSWORD=secret
