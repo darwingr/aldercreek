@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.6
+    volumes:
+      - "./data/db:/var/lib/mysql"
+    restart: always
+    environment:
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_ROOT_PASSWORD=***REMOVED***
+
+  web:
+    depends_on:
+      - db
+    # build vs image?
+    #build: .
+    image: wordpress:latest
+    ports:
+      - "80:80"
+    links:
+      - db:mysql
+    volumes:
+      - "/aldercreek/wordpress:/var/www/html"
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_PASSWORD: ***REMOVED***
