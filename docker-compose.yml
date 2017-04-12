@@ -13,8 +13,6 @@ services:
   web:
     depends_on:
       - db
-    # build vs image?
-    #build: .
     image: wordpress:latest
     ports:
       - "80:80"
